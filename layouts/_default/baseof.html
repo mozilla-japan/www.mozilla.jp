@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ .Description }}">
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <link rel="stylesheet" type="text/css" href="/styles/global.css">
+    <link rel="icon" type="image/png" href="/images/template/favicon.png">
+    <title>{{ block "page-title" . }}{{ .Title }}{{ end }}</title>
+{{- block "extra-head" . }}{{ end }}
+  </head>
+  <body>
+    <header id="page-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+      <div id="global-header" class="outer">
+        <div class="inner">
+          <h1><a href="/">Mozilla Japan コミュニティポータル</a></h1>
+        </div>
+      </div>
+{{- block "local-header" . }}{{ end }}
+    </header>
+{{- block "main-content" . }}{{ end }}
+    <footer id="page-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+{{- block "local-footer" . }}{{ end }}
+      <div id="global-footer" class="outer">
+        <div class="inner">
+          <div id="copyright">
+            <p>Copyright &copy; <span itemprop="copyrightYear">{{ now.Format "2006" }}</span> <span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Mozilla Japan Community</span></span>. All rights reserved.</p>
+            <p>当サイトの運用には <a href="http://www.naist.jp/" rel="nofollow">奈良先端科学技術大学院大学</a>、<a href="https://datahotel.jp/" rel="nofollow">データホテル</a> (<a href="https://nhn-techorus.com/" rel="nofollow">NHN テコラス株式会社</a>) および <a href="http://www.accelia.net/" rel="nofollow">アクセリア株式会社</a> のご協力をいただいております。</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://twitter.com/mozillajp">
+                <span class="icon" aria-hidden="true">&#xf099;</span>
+                <span class="label">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/mozillajapan">
+                <span class="icon" aria-hidden="true">&#xf230;</span>
+                <span class="label">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+h2 {
+  text-align: center;
+}
+
+#products {
+  background-color: #21123C;
+  color: #FFF;
+  text-align: center;
+}
+
+#products a {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  color: inherit;
+}
+
+.links section {
+  margin: 0 0 32px;
+}
+
+.links h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.links h3 + p {
+  margin: 8px 0;
+}
+
+#community-links {
+  background-color: #EDEDF0;
+}
+
+#supporters {
+  background-color: #EDEDF0;
+  text-align: center;
+}

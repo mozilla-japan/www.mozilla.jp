@@ -1,0 +1,13 @@
+{{- define "main-content" }}
+<div id="main-content" class="outer">
+  <div class="inner">
+    <main>
+      <header>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+      </header>
+      {{- .Content }}
+    </main>
+  </div>
+</div>
+{{- end }}

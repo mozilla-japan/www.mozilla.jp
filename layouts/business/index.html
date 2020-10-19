@@ -1,0 +1,21 @@
+{{- define "page-title" -}}
+  法人向け情報 | {{ .Site.Title }}
+{{- end }}
+
+{{- define "local-header" }}
+{{ partial "business-local-header" . }}
+{{- end }}
+
+{{- define "main-content" }}
+<div id="main-content" class="outer">
+  <div class="inner">
+    <main>
+      <header>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+      </header>
+      {{- .Content }}
+    </main>
+  </div>
+</div>
+{{- end }}

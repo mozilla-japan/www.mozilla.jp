@@ -1,0 +1,25 @@
+metaDataFormat: yaml
+disableHugoGeneratorInject: true
+hasCJKLanguage: true
+title: Mozilla Japan コミュニティポータル
+copyright: Mozilla Japan コミュニティ
+baseURL: https://www.mozilla.jp/
+languageCode: ja
+timeout: 500000
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+  - RSS
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+  term:
+    - HTML
+markup:
+  goldmark:
+    extensions:
+      typographer: true
+    renderer:
+      unsafe: true

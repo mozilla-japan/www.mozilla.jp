@@ -1,0 +1,82 @@
+{{- define "extra-head" }}
+<link rel="stylesheet" type="text/css" href="/styles/home.css">
+{{- end }}
+
+{{- define "main-content" }}
+<div id="main-content">
+  <main>
+    <div id="products" class="outer">
+      <div class="inner">
+        <section>
+          <h2><span>Mozilla 製品</span><span>ダウンロード</span></h2>
+          <ul class="column">
+            {{- range .Params.products }}
+            <li>
+              <a href="{{ .link }}">
+                <figure>
+                  {{- with .image }}
+                  <img src="{{ .src }}" srcset="{{ .src2x }} 1.5x" width="128" height="128" alt="">
+                  {{- end }}
+                  <figcaption>{{ .name }}</figcaption>
+                </figure>
+              </a>
+            </li>
+            {{- end }}
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div id="community-links" class="outer">
+      <div class="inner">
+        <section>
+          <h2><span>Mozilla 関連</span><span>コミュニティ紹介</span></h2>
+          <div class="column links">
+            {{- range .Params.community_links }}
+            <section>
+              <h3><a href="{{ .link }}">{{ .name }}</a></h3>
+              <p>{{ .description }}</p>
+            </section>
+            {{- end }}
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="related-links" class="outer">
+      <div class="inner">
+        <section>
+          <h2><span>その他</span> <span>Mozilla 関連リンク</span></h2>
+          <div class="column links">
+            {{- range .Params.related_links }}
+            <section>
+              <h3><a href="{{ .link }}">{{ .name }}</a></h3>
+              <p>{{ .description }}</p>
+            </section>
+            {{- end }}
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="supporters" class="outer">
+      <div class="inner">
+        <section>
+          <h2>コミュニティサポーター</h2>
+          <ul class="column">
+            {{- range .Params.supporters }}
+            <li>
+              <a href="{{ .link }}">
+                <figure>
+                  {{- with .image }}
+                  <img src="{{ .src }}" srcset="{{ .src2x }} 1.5x" width="{{ .width }}" height="{{ .height }}" alt="">
+                  {{- end }}
+                  <figcaption>{{ .name }}</figcaption>
+                </figure>
+              </a>
+            </li>
+            {{- end }}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+{{- end }}
