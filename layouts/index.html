@@ -59,21 +59,9 @@
     <div id="supporters" class="outer">
       <div class="inner">
         <section>
-          <h2>コミュニティサポーター</h2>
-          <ul class="column">
-            {{- range .Params.supporters }}
-            <li>
-              <a href="{{ .link }}">
-                <figure>
-                  {{- with .image }}
-                  <img src="{{ .src }}" srcset="{{ .src2x }} 1.5x" width="{{ .width }}" height="{{ .height }}" alt="">
-                  {{- end }}
-                  <figcaption>{{ .name }}</figcaption>
-                </figure>
-              </a>
-            </li>
-            {{- end }}
-          </ul>
+          <h2>このサイトについて</h2>
+          <p>この「Mozilla Japan コミュニティポータル」は、日本の Mozilla &amp; Firefox ユーザーコミュニティ有志が運営しています。</p>
+          <p><a href="https://www.mozilla.org/ja/">Mozilla の公式サイトはこちら &raquo;</a></p>
         </section>
       </div>
     </div>

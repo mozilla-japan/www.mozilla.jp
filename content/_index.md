@@ -1,6 +1,6 @@
 ---
 title: Mozilla Japan コミュニティポータル
-description: 日本の Mozilla & Firefox コミュニティのポータルサイトです。
+description: 日本の Mozilla & Firefox ユーザーコミュニティが運営しているポータルサイトです。
 products:
   - name: ウェブブラウザー Firefox
     link: https://www.mozilla.org/ja/firefox/
@@ -47,19 +47,4 @@ related_links:
   - name: フォクすけ
     link: https://foxkeh.jp/
     description: 日本発の Firefox 応援マスコットキャラクター「フォクすけ」の素材など
-supporters:
-  - name: Mozilla Foundation
-    link: https://foundation.mozilla.org/
-    image:
-      src: /images/supporters/moz-wordmark-dark-reverse.svg
-      src2x: /images/supporters/moz-wordmark-dark-reverse.svg
-      width: 320
-      height: 102
-  - name: WebDINO Japan (旧・一般社団法人 Mozilla Japan)
-    link: https://www.webdino.org/
-    image:
-      src: /images/supporters/webdino-logo.png
-      src2x: /images/supporters/webdino-logo@2x.png
-      width: 400
-      height: 100
 ---
