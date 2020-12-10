@@ -90,7 +90,8 @@ Firefox ESR 60.7.0 (64 bit 版) が導入済みのクライアントを Firefox 
             <patch type="complete"
                    URL="marファイルのダウンロード用 URL"
                    hashFunction="ハッシュ関数の種類"
-                   hashValue="mar ファイルのハッシュ"/>
+                   hashValue="mar ファイルのハッシュ"
+                   size="mar ファイルのサイズ（バイト数）"/>
           </update>
         </updates>
 
@@ -107,7 +108,8 @@ Firefox ESR 60.7.0 (64 bit 版) が導入済みのクライアントを Firefox 
             <patch type="complete"
                    URL="marファイルのダウンロード用 URL"
                    hashFunction="SHA512"
-                   hashValue="mar ファイルの SHA-512 ハッシュ"/>
+                   hashValue="mar ファイルの SHA-512 ハッシュ"
+                   size="mar ファイルのサイズ（バイト数）"/>
           </update>
         </updates>
 
