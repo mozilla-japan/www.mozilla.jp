@@ -1,0 +1,34 @@
+{{- define "page-title" -}}
+  {{ .Title }} | コミュニティ関連文書情報 | {{ .Site.Title }}
+{{- end }}
+
+{{- define "local-header" }}
+{{ partial "documents-local-header" . }}
+{{- end }}
+
+{{- define "main-content" }}
+<div id="main-content" class="outer">
+  <div class="inner">
+    <!--
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          {{- range where .Site.RegularPages ".Layout" "documents-mpl-article" }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{- end }}
+        </ul>
+      </nav>
+      <p>このページに記載している技術情報は <a href="https://github.com/mozilla-japan/www.mozilla.jp/tree/main/content/documents/mpl/">GitHub レポジトリ上のファイル</a> を元に生成しています。よくある質問と回答の更新、追加にご協力いただける方は、<a href="https://github.com/mozilla-japan/www.mozilla.jp/issues">同レポジトリの Issues</a> に報告されるか、直接プルリクエストをお送りください。</p>
+    </aside>
+    -->
+    <main>
+      <article>
+        <header>
+          <h1>{{ .Title }}</h1>
+        </header>
+        {{- .Content }}
+      </article>
+    </main>
+  </div>
+</div>
+{{- end }}

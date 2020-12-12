@@ -41,6 +41,21 @@
         </section>
       </div>
     </div>
+    <div id="community-documents" class="outer">
+      <div class="inner">
+        <section>
+          <h2><span>コミュニティ</span><span>関連文書</span></h2>
+          <div class="column links">
+            {{- range .Params.community_documents }}
+            <section>
+              <h3><a href="{{ .link }}">{{ .name }}</a></h3>
+              <p>{{ .description }}</p>
+            </section>
+            {{- end }}
+          </div>
+        </section>
+      </div>
+    </div>
     <div id="related-links" class="outer">
       <div class="inner">
         <section>
