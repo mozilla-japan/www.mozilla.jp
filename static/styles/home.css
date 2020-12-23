@@ -32,7 +32,15 @@ h2 {
   background-color: #EDEDF0;
 }
 
-#supporters {
+#community-documents {
+  background-color: inherit;
+}
+
+#related-links {
   background-color: #EDEDF0;
+}
+
+#supporters {
+  background-color: inherit;
   text-align: center;
 }

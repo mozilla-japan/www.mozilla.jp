@@ -31,6 +31,16 @@ community_links:
   - name: Mozilla 関連イベント情報 (Doorkeeper)
     link: https://mozilla.doorkeeper.jp/
     description: Mozilla の製品や技術、ウェブ標準技術に関する勉強会やイベントの告知
+community_documents:
+  - name: Mozilla コミュニティ参加ガイドライン
+    link: https://www.mozilla.org/ja/about/governance/policies/participation/
+    description: Mozilla コミュニティに参加するにあたり、すべての参加者に守ってほしいガイドラインです。
+  - name: Mozilla 翻訳＆ローカライズコミュニティ Wiki
+    link: https://github.com/mozilla-japan/translation/wiki
+    description: ドキュメント翻訳の始め方や表記ガイドライン、各ウェブサイトへのリンクが含まれます。
+  - name: Mozilla Public License 日本語訳
+    link: /documents/mpl/
+    description: Mozilla により作成されたフリーソフトウェアライセンス「Mozilla Public License」の Mozilla Japan コミュニティによる日本語参考訳です。Mozilla 製品のソースコードに適用されています。
 related_links:
   - name: MDN web docs
     link: https://developer.mozilla.org/ja/
