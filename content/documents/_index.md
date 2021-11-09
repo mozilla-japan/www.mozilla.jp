@@ -20,5 +20,5 @@ MDN Web Docs (MDN) や Mozilla サポート (SUMO)、その他ウェブサイト
 Mozilla により作成されたフリーソフトウェアライセンス「Mozilla Public License」の日本語参考訳です。
 
 * [Mozilla Public License](/documents/mpl/)
-  * MPL 2.0 日本語参考訳 (Mozilla Japan コミュニティ訳) 準備中
+  * [MPL 2.0 日本語参考訳](/documents/mpl/2.0/) (Mozilla Japan コミュニティ訳)
   * [MPL 1.1 日本語参考訳](/documents/mpl/MPL-1.1J.html) (Mozilla Japan 訳)
