@@ -1,23 +1,23 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --gc"
 
 [context.production]
 
 [context.production.environment]
-HUGO_VERSION = "0.74.1"
+HUGO_VERSION = "0.108.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --buildFuture"
+command = "hugo --gc --buildFuture"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.74.1"
+HUGO_VERSION = "0.108.0"
 HUGO_ENV = "production"
 
 [context.branch-deploy]
-command = "hugo --buildFuture"
+command = "hugo --gc --buildFuture"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.74.1"
+HUGO_VERSION = "0.108.0"
 HUGO_ENV = "production"
