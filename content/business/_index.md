@@ -36,7 +36,7 @@ Internet Explorer に依存したシステムを考慮した Firefox への移�
 
 ### 株式会社 Digital Stacks
 
-要件に応じてカスタマイズや運用方法の策定、Firefox の導入から運用までをサポートされています。金融機関などの法人向けに Firefox の大規模な導入・運用実績もあるそうです。詳しくは [株式会社 Digital Stacks のサイト](https://www.digitalstacks.net/products-firefox-esr) をご覧ください。
+要件に応じてカスタマイズや運用方法の策定、Firefox の導入から運用までをサポートされています。金融機関などの法人向けに Firefox の大規模な導入・運用実績もあるそうです。詳しくは [株式会社 Digital Stacks のサイト](https://www.digitalstacks.net/tp/products-firefox-esr/) をご覧ください。
 
 ### ミラクル・リナックス株式会社
 
