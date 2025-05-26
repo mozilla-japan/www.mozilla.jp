@@ -44,19 +44,20 @@ Firefox、Thunderbird ともにソースコードが公開されているオー�
 Windows、macOS、Linux に対応しており、機能はいずれの OS でもほぼ同等です。詳しい動作環境は以下のページをご覧ください。
 
 * [Firefox システム要件](/firefox/system-requirements/)
-* [Thunderbird システム要件](/thunderbird/system-requirements/)
+* [Thunderbird システム要件](https://www.thunderbird.net/system-requirements/)
 
 ### 64 ビット版 OS に対応していますか？
 
-はい。Firefox は通常版と ESR いずれも 32 ビット版と 64 ビット版が提供されています。Thunderbird は 32 ビット版のみですが、64 ビット環境でも利用可能です。
+はい。[Firefox](https://www.mozilla.org/ja/firefox/all/)、[Thunderbird](https://www.thunderbird.net/ja/thunderbird/all/) ともに通常版と ESR いずれも 32 ビット版と 64 ビット版が提供されています。
 
 ### どの言語に対応していますか？
 
-[Firefox は 90 以上](https://www.mozilla.org/ja/firefox/all/)、[Thunderbird は 50 以上](https://www.thunderbird.net/ja/all/) の言語に対応しています。各言語版は、すべての OS で同時にリリースされます。英語版が先にリリースされ日本語版が遅れる、あるいは Windows 版と macOS 版のリリース時期が異なるといったことはありませんので、バージョン管理も容易です。
+[Firefox は 90 以上](https://www.mozilla.org/ja/firefox/all/)、[Thunderbird は 50 以上](https://www.thunderbird.net/ja/thunderbird/all/) の言語に対応しています。各言語版は、すべての OS で同時にリリースされます。英語版が先にリリースされ日本語版が遅れる、あるいは Windows 版と macOS 版のリリース時期が異なるといったことはありませんので、バージョン管理も容易です。
 
-### モバイル版の Firefox もあると聞いたのですが？
+### モバイル版もあると聞いたのですが？
 
-スマートフォンとタブレットの両方に最適化した [iOS 版 Firefox](https://www.mozilla.org/ja/firefox/ios/) と [Android 版 Firefox](https://www.mozilla.org/ja/firefox/android/) が公開されています。デスクトップ版と変わらない安全性、生産性、拡張性を提供します。ブックマークやタブなど、ブラウザー環境を [安全に同期できる機能](https://www.mozilla.org/ja/firefox/features/sync/) も標準装備となっています。
+Firefox はスマートフォンとタブレットの両方に最適化した [iOS 版](https://www.mozilla.org/ja/firefox/ios/) と [Android 版](https://www.mozilla.org/ja/firefox/android/) が公開されています。デスクトップ版と変わらない安全性、生産性、拡張性を提供します。ブックマークやタブなど、ブラウザー環境を [安全に同期できる機能](https://www.mozilla.org/ja/firefox/features/sync/) も標準装備となっています。
+Thunderbird は [Android 版](https://www.thunderbird.net/ja/mobile/) のみ公開されています。統合受信トレイや OpenPGP によるメール暗号化に対応し、QR コードによりデスクトップ版からアカウントをインポートすることもできます。
 
 ## サポート
 
@@ -96,7 +97,7 @@ Firefox、Thunderbird ともに [集中管理機能](/business/faq/tech/setting-
 ベータ版は正式版リリースの 6 〜 8 週間前に公開されます。ベータ版で事前に動作検証を済ませ、正式版リリース後早期に更新を実施されることをお勧めします。
 
 * [Firefox プレビューリリース](https://www.mozilla.org/ja/firefox/channel/)
-* [Thunderbird プレビューリリース](https://www.thunderbird.net/ja/channel/)
+* [Thunderbird プレビューリリース](https://www.thunderbird.net/ja/thunderbird/all/)
 
 ### マイナーアップデートはどのようなタイミングで提供されますか？
 
@@ -112,16 +113,16 @@ Firefox、Thunderbird ともに [集中管理機能](/business/faq/tech/setting-
 
 ### Microsoft Windows Installer (MSI) はありますか？
 
-現時点では提供されていません。
+はい、[Firefox](https://www.mozilla.org/ja/firefox/all/)、[Thunderbird](https://www.thunderbird.net/ja/thunderbird/all/) ともに通常版と ESR いずれも MSI と EXE インストーラーが提供されています。ただし、Thunderbird の 32 ビット版は MSI インストーラーが提供されていません。
 
-### モバイル版 Firefox の ESR はありますか？
+### モバイル版 の ESR はありますか？
 
-Android 版 Firefox や iOS 版の Firefox に ESR はありません。延長サポート版の提供は Windows、Mac、Linux 版のみです。
+Android / iOS 版の Firefox や Android 版の Thunderbird に ESR はありません。延長サポート版の提供は Windows、Mac、Linux 版のみです。
 
 ### Thunderbird の ESR はありますか？
 
-Thunderbird はバージョン 24 から通常版と ESR が統合されました。通常版でも ESR と同様、メジャーアップデートは 1 年に 1 度となります。[通常版をご利用ください](https://www.thunderbird.net/ja/)。
+[Thunderbird](https://www.thunderbird.net/ja/thunderbird/all/) はバージョン 24 から通常版と ESR が統合されていましたが、[バージョン 136 以降から再び分離](https://blog.thunderbird.net/2025/02/thunderbird-desktop-release-channel-default-download/) (英語) されました。
 
 ### リリース情報はどこで入手できますか？
 
-製品のリリース情報は [Firefox のリリースノート](/firefox/releases/) や [Thunderbird のリリースノート](/thunderbird/releases/) をご覧ください。米国 Mozilla が主宰する [法人ユーザーワーキンググループ](https://wiki.mozilla.org/Enterprise) (英語) では、法人の IT 担当者や Mozilla の開発者が Mozilla 製品の導入に関する意見を交換できるよう、[メーリングリスト](https://mail.mozilla.org/listinfo/enterprise) (英語) が設けられています。すべて英語の情報となりますが、関心のある方は参加してみてはどうでしょうか。また、Thunderbird に関する議論に特化したメーリングリスト [tb-enterprise](https://wiki.mozilla.org/Thunderbird/tb-enterprise) (英語) もあります。[法人向けサポート](/business/#support) を購入した法人では、契約次第で電話やファクスによる通知を受けられる場合もありますので、契約先にご相談ください。今後のリリーススケジュールは [Mozilla Wiki](https://wiki.mozilla.org/RapidRelease/Calendar) (英語) に掲載していますが、日程が変更されることもあります。
+製品のリリース情報は [Firefox のリリースノート](/firefox/releases/) や [Thunderbird のリリースノート](https://www.thunderbird.net/en-US/thunderbird/releases/) をご覧ください。また、Thunderbird に関する議論に特化したメーリングリスト [tb-enterprise](https://wiki.mozilla.org/Thunderbird/tb-enterprise) (英語) もあります。[法人向けサポート](/business/#support) を購入した法人では、契約次第で電話やファクスによる通知を受けられる場合もありますので、契約先にご相談ください。今後のリリーススケジュールは [Firefox Release Calendar](https://whattrainisitnow.com/calendar/) (英語) や [Thunderbird Milestones Calendar](https://developer.thunderbird.net/releases/cadence#thunderbird-milestones-calendar) (英語) で公開されていますが、日程が変更されることもあります。
