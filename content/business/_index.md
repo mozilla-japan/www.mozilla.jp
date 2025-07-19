@@ -38,9 +38,9 @@ Internet Explorer に依存したシステムを考慮した Firefox への移�
 
 要件に応じてカスタマイズや運用方法の策定、Firefox の導入から運用までをサポートされています。金融機関などの法人向けに Firefox の大規模な導入・運用実績もあるそうです。詳しくは [株式会社 Digital Stacks のサイト](https://www.digitalstacks.net/tp/products-firefox-esr/) をご覧ください。
 
-### ミラクル・リナックス株式会社
+### サイバートラスト株式会社 (旧社名: ミラクル・リナックス株式会社)
 
-企業や行政、教育機関など、法人で利用するブラウザーとして Firefox を推奨されており、「Mozilla Firefox 法人向けサポート」として使用方法、機能、不具合へのお問い合わせやソースコードレベルでの調査、不具合対応や機能追加のためのアドオン開発などのサービスを提供されています。またセキュリティ強化の観点から Firefox を活用した社内システム構築の提案もされています。詳しくは [ミラクル・リナックス株式会社のサイト](https://www.miraclelinux.com/lp/mozilla-support) をご覧ください。
+企業や行政、教育機関など、法人で利用するブラウザーとして Firefox を推奨されており、「[Mozilla Firefox 法人向けサポート](https://www.cybertrust.co.jp/pressrelease/miraclelinux-old/2016-08-31.html)」として使用方法、機能、不具合へのお問い合わせやソースコードレベルでの調査、不具合対応や機能追加のためのアドオン開発などのサービスを提供されています。([合併・社名変更後も、Linux／OSS 事業は継続し拡大する](https://www.miraclelinux.com/news/20170720)としています。) またセキュリティ強化の観点から Firefox を活用した社内システム構築の提案もされています。詳しくは [サイバートラスト株式会社のサイト](https://www.cybertrust.co.jp/linux-oss/) をご覧ください。
 
 ## もっと詳しく
 
