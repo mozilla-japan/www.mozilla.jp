@@ -209,25 +209,25 @@ Firefox の差分更新用ファイルを用いて際の手順は以下の通り
 
 本項では、例として以下のバージョンにおける差分更新の適用時の具体的な手順を示します。
 
-* 現在 Firefox ESR 68.0 がインストールされている。
-* Firefox ESR 68.1.0 へアップデートする。
+* 現在 Firefox ESR 140.0 がインストールされている。
+* Firefox ESR 140.1.0 へアップデートする。
 * 作業ディレクトリは `C:\temp` とする。
 * Firefox のインストール先は `C:\Program Files\Mozilla Firefox` とする。
 
  1. 管理者権限でコマンドプロンプトを起動する。
  2. 差分アップデート用のファイルを作業ディレクトリに `update.mar` というファイル名で配置する。
 
-        > copy firefox-68.0esr-68.1.0esr.partial.mar "C:\temp\update.mar"
+        > copy firefox-140.0esr-140.1.0esr.partial.mar "C:\temp\update.mar"
 
  3. Firefox のインストール先フォルダにある `updater.exe` を作業ディレクトリにコピーする。
 
         > copy "C:\Program Files\Mozilla Firefox\updater.exe"
           "C:\temp\updater.exe"
 
- 4. 作業ディレクトリに配置した `updater.exe` を、作業ディレクトリのフルパスを第 1 引数、Firefox のインストール先フォルダのフルパスを第 2 引数と第 3 引数として渡して起動する。
+ 4. 作業ディレクトリに配置した `updater.exe` を、所定の引数を指定して起動する。
 
         > cd c:\temp
-        > updater.exe "C:\temp" "C:\Program Files\Mozilla Firefox" "C:\Program Files\Mozilla Firefox"
+        > updater.exe 3 "C:\temp" "C:\Program Files\Mozilla Firefox" "C:\Program Files\Mozilla Firefox" first
 
  5. アップデートの適用結果を確認する。
 
