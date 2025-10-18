@@ -25,7 +25,7 @@ weight: 6
 
 キーワード：機能制限、集中管理、自動アップデート
 
-Firefox や Thunderbird の ESR 版は通常、あるメジャーバージョンのサポートが終了すると、自動アップデート経由で次のメジャーバージョンにアップデートされます。例えば Firefox ESR 68 は、順次 Firefox ESR 78 へアップデートされます。
+Firefox や Thunderbird の ESR 版は通常、あるメジャーバージョンのサポートが終了すると、自動アップデート経由で次のメジャーバージョンにアップデートされます。例えば Firefox ESR 128 は、順次 Firefox ESR 140 へアップデートされます。
 
 このようなメジャーバージョンの変更を伴う自動アップデートの適用を禁止し、マイナーバージョンの変更のみを適用するには、組織内で提供する更新情報を参照するようにする必要があります。
 
@@ -66,13 +66,13 @@ Firefox や Thunderbird の ESR 版は通常、あるメジャーバージョン
 
 -->
 
-Firefox ESR 60.7.0 (64 bit 版) が導入済みのクライアントを Firefox ESR 68.0 (64 bit 版) に更新するための情報およびファイルを静的なファイルとして提供する場合を例として、手順を説明します。
+Firefox ESR 128.11.0 (64 bit 版) が導入済みのクライアントを Firefox ESR 140.0 (64 bit 版) に更新するための情報およびファイルを静的なファイルとして提供する場合を例として、手順を説明します。
 
  1. アップデート用のアーカイブファイルを Mozilla のリリースサーバーから入手します。
 
     - リリースサーバー上には各バージョンのアップデート用差分ファイル、完全アップデート用アーカイブファイルが保存されており、以下のような URL でダウンロードすることができます。
 
-      [https://releases.mozilla.org/pub/firefox/releases/68.0esr/update/win64/ja/](https://releases.mozilla.org/pub/firefox/releases/68.0esr/update/win64/ja/)
+      [https://releases.mozilla.org/pub/firefox/releases/140.0esr/update/win64/ja/](https://releases.mozilla.org/pub/firefox/releases/140.0esr/update/win64/ja/)
 
     - ファイル名に `partial` と付いている物は差分アップデート用ファイル、`complete` と付いている物は完全アップデート用ファイルです。差分アップデート用ファイルはファイル名で示されている更新前バージョンに対してのみ適用できます。
 
@@ -95,14 +95,14 @@ Firefox ESR 60.7.0 (64 bit 版) が導入済みのクライアントを Firefox 
           </update>
         </updates>
 
-    例えば Firefox ESR 68.0 への更新で、ハッシュを SHA-512 で用意するのあれば、以下のようになります。
+    例えば Firefox ESR 140.0 への更新で、ハッシュを SHA-512 で用意するのあれば、以下のようになります。
 
         <?xml version="1.0"?>
         <updates>
           <update type="minor"
-                  displayVersion="68.0esr"
-                  appVersion="68.0"
-                  platformVersion="68.0"
+                  displayVersion="140.0esr"
+                  appVersion="140.0"
+                  platformVersion="140.0"
                   buildID="about:supportで確認できるビルド ID"
                   actions="silent">
             <patch type="complete"
@@ -155,19 +155,19 @@ Firefox や Thunderbird の自動アップデート機能は、通常のイン�
     Windows 用 32 bit 版：
     https://releases.mozilla.org/pub/mozilla.org/[製品名]/releases/[アップデート先バージョン]/update/win32/ja/[製品名]-[アップデート元バージョン]-[アップデート先バージョン].partial.mar
 
-例えば Firefox ESR 68.0 (64 bit 版) から ESR 68.1.0 (64 bit 版) へアップデートする場合に必要な差分ファイルは以下の場所から入手できます。
+例えば Firefox ESR 140.0 (64 bit 版) から ESR 140.1.0 (64 bit 版) へアップデートする場合に必要な差分ファイルは以下の場所から入手できます。
 
-    https://releases.mozilla.org/pub/firefox/releases/68.1.0esr/update/win64/ja/firefox-68.0esr-68.1.0esr.partial.mar
+    https://releases.mozilla.org/pub/firefox/releases/140.1.0esr/update/win64/ja/firefox-140.0esr-140.1.0esr.partial.mar
 
 差分ファイルによるアップデートを行うには、現在インストールされている Firefox のバージョンに対応した差分ファイルが必要となります。差分ファイルが想定する「アップデート前のバージョン」が現在インストールされている Firefox のバージョンに一致しない場合、差分アップデートは行えません。
 
-通常、公式の FTP サイトでは特定バージョンの Firefox に対して、それ以前のいくつかのバージョンからの差分アップデート用のファイルのみが配布されています。差分ファイルが用意されていないパターン、例えば Firefox ESR 60.0 から ESR 68.0 へアップデートするというような、間のバージョンを多数飛ばしたアップデートは原則として行えないものとご理解ください。
+通常、公式の FTP サイトでは特定バージョンの Firefox に対して、それ以前のいくつかのバージョンからの差分アップデート用のファイルのみが配布されています。差分ファイルが用意されていないパターン、例えば Firefox ESR 78.0 から ESR 140.0 へアップデートするというような、間のバージョンを多数飛ばしたアップデートは原則として行えないものとご理解ください。
 
 ### 差分更新の適用手順の凡例
 
 Firefox の差分更新用ファイルを用いて際の手順は以下の通りです。
 
- 1. 管理者権限でコマンドプロンプトを起動する。Windows XP の場合、Administrator 権限のあるユーザーでコマンドプロンプトを起動する。Windows Vista 以降の場合、スタートメニューの「すべてのプログラム」→「アクセサリ」→「コマンド プロンプト」を右クリックして「管理者として実行」を選択する。
+ 1. 管理者権限でコマンドプロンプトを起動する。Windows 10 以降の場合、タスクバーの検索窓に「cmd.exe」と入力して、見つかった項目「コマンド プロンプト」の「管理者として実行」を選択する。
  2. 先の方法で入手した差分アップデート用のファイル ( `firefox-*-*.partial.mar` ) を作業ディレクトリに「`update.mar`」というファイル名で配置する。
 
         > copy firefox-*.partial.mar "<作業ディレクトリのパス>\update.mar"
@@ -177,18 +177,27 @@ Firefox の差分更新用ファイルを用いて際の手順は以下の通り
         > copy "<Firefoxのインストール先フォルダのパス>\updater.exe"
             "<作業ディレクトリのパス>\updater.exe"
 
- 4. 作業ディレクトリに配置した `updater.exe` を、差分アップデート用のファイルがあるディレクトリ (ここでは作業ディレクトリと同じ) のフルパスを第 1 引数、Firefox のインストール先フォルダのフルパスを第 2 引数、`updater.exe` が動作する際の作業フォルダのパス (＝Firefox のインストール先フォルダ) のフルパスを第 3 引数して渡して起動する。
+ 4. 作業ディレクトリに cd する。
 
-        > cd "<作業ディレクトリのパス>"
-        > "<作業ディレクトリのパス>\updater.exe" "<差分アップデート用のファイルがあるディレクトリのフルパス>" "<Firefoxのインストール先フォルダのフルパス>" "<Firefoxのインストール先フォルダのフルパス>"
+            > cd "<作業ディレクトリのパス>"
 
- 5. アップデートの適用結果を確認する。作業ディレクトリに出力された `update.status` の内容が「succeeded」であれば、アップデートに成功している。そうでない場合は、アップデートの適用に失敗している。
+ 5. 作業ディレクトリに配置した `updater.exe` を、以下の引数を指定して起動する。
 
- 6. アンインストール情報を更新する。 `update.log` を Firefox のインストール先フォルダの「`uninstall`」フォルダ内に、「`uninstall.update`」というファイル名でコピーする。
+    * Firefox 138およびそれ以降：第1引数＝3（固定の数値で、引数指定のバージョンを表す）、第2引数＝差分アップデート用のファイルがあるディレクトリ (ここでは作業ディレクトリと同じ) のフルパス、第3引数＝Firefox のインストール先フォルダのフルパス、第4引数＝`updater.exe` が動作する際の作業フォルダ (＝Firefox のインストール先フォルダ) のフルパス、第5引数＝first（固定の文字列で、呼び出しが直接起動（first）か自動更新からの呼び出し（second）かを表す）
+    
+            > "<作業ディレクトリのパス>\updater.exe" 3 "<差分アップデート用のファイルがあるディレクトリのフルパス>" "<Firefoxのインストール先フォルダのフルパス>" "<Firefoxのインストール先フォルダのフルパス>" first
+
+    * Firefox 137およびそれ以前：第1引数＝差分アップデート用のファイルがあるディレクトリ (ここでは作業ディレクトリと同じ) のフルパス、第2引数＝Firefox のインストール先フォルダのフルパス、第3引数＝`updater.exe` が動作する際の作業フォルダ (＝Firefox のインストール先フォルダ) のフルパス
+    
+            > "<作業ディレクトリのパス>\updater.exe" "<差分アップデート用のファイルがあるディレクトリのフルパス>" "<Firefoxのインストール先フォルダのフルパス>" "<Firefoxのインストール先フォルダのフルパス>"
+
+ 6. アップデートの適用結果を確認する。作業ディレクトリに出力された `update.status` の内容が「succeeded」であれば、アップデートに成功している。そうでない場合は、アップデートの適用に失敗している。
+
+ 7. アンインストール情報を更新する。 `update.log` を Firefox のインストール先フォルダの「`uninstall`」フォルダ内に、「`uninstall.update`」というファイル名でコピーする。
 
         > copy /Y update.log "<Firefoxのインストール先フォルダのパス>\uninstall\uinstall.update"
 
- 7. アップデートの後処理を実行する。Firefox のインストール先フォルダの「`uninstall`」フォルダにある `helper.exe` を、「`/PostUpdate`」オプションを指定して実行する。
+ 8. アップデートの後処理を実行する。Firefox のインストール先フォルダの「`uninstall`」フォルダにある `helper.exe` を、「`/PostUpdate`」オプションを指定して実行する。
 
         > "<Firefoxのインストール先フォルダのパス>\uninstall\helper.exe" /PostUpdate
 
@@ -200,25 +209,25 @@ Firefox の差分更新用ファイルを用いて際の手順は以下の通り
 
 本項では、例として以下のバージョンにおける差分更新の適用時の具体的な手順を示します。
 
-* 現在 Firefox ESR 68.0 がインストールされている。
-* Firefox ESR 68.1.0 へアップデートする。
+* 現在 Firefox ESR 140.0 がインストールされている。
+* Firefox ESR 140.1.0 へアップデートする。
 * 作業ディレクトリは `C:\temp` とする。
 * Firefox のインストール先は `C:\Program Files\Mozilla Firefox` とする。
 
  1. 管理者権限でコマンドプロンプトを起動する。
  2. 差分アップデート用のファイルを作業ディレクトリに `update.mar` というファイル名で配置する。
 
-        > copy firefox-68.0esr-68.1.0esr.partial.mar "C:\temp\update.mar"
+        > copy firefox-140.0esr-140.1.0esr.partial.mar "C:\temp\update.mar"
 
  3. Firefox のインストール先フォルダにある `updater.exe` を作業ディレクトリにコピーする。
 
         > copy "C:\Program Files\Mozilla Firefox\updater.exe"
           "C:\temp\updater.exe"
 
- 4. 作業ディレクトリに配置した `updater.exe` を、作業ディレクトリのフルパスを第 1 引数、Firefox のインストール先フォルダのフルパスを第 2 引数と第 3 引数として渡して起動する。
+ 4. 作業ディレクトリに配置した `updater.exe` を、所定の引数を指定して起動する。
 
         > cd c:\temp
-        > updater.exe "C:\temp" "C:\Program Files\Mozilla Firefox" "C:\Program Files\Mozilla Firefox"
+        > updater.exe 3 "C:\temp" "C:\Program Files\Mozilla Firefox" "C:\Program Files\Mozilla Firefox" first
 
  5. アップデートの適用結果を確認する。
 
